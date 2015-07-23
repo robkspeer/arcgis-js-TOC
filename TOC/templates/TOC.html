@@ -1,0 +1,49 @@
+<div role="presentation">
+
+    <div data-dojo-attach-point="tocContainer" style="overflow: hidden;">
+        <div data-dojo-attach-point="basemapGallery">
+            <div data-dojo-attach-point="BasemapGalleryNode"></div>
+            <div data-dojo-attach-point="basemapFadeSlider" data-dojo-type="dojox/mobile/Slider" data-dojo-props="intermediateChanges: true" style="width: 90%; margin: 10px auto 5px auto;" data-dojo-attach-event="change: _setImageryVisibility"></div>
+            <div style="float: right; font-size: 50%">Imagery</div>
+            <div style="float: left; font-size: 50%">Basemap</div>
+        </div>
+        <div style="clear: both; padding-top: 10px;">Layers:
+            <span data-dojo-type="dojox/mobile/ToggleButton" data-dojo-attach-point="expandAllButton" data-dojo-props="label: 'Expand All', baseClass: '${_css.tocToggleButton}'" data-dojo-attach-event="click: _expandAll"></span>
+            <input style="position: relative; display: inline-block !important;" data-dojo-type="dijit/form/CheckBox" data-dojo-attach-point="toggleAllCheckbox" data-dojo-props="checked: true" data-dojo-attach-event="click: toggleAllLayers"></input>
+            <label for="toggleAllCheckbox" style="font-size: 75%;">Toggle All Layers</label>
+        </div>
+        <hr>
+    </div>
+
+    <div data-dojo-attach-point="tocLayerInfoWindow" class="tocLayerInfoWindow" style="display: none; overflow: hidden;">
+
+            <div data-dojo-type="dojox/mobile/Heading" data-dojo-attach-point="tocLayerInfoHeader" style="float: top; top: 0px; width: 100%; cursor: move; border: 0px;">
+                <span data-dojo-attach-point="tocLayerInfoTitle" style="float: top; font-weight: bold; font-size: 16px;"></span>
+                <button data-dojo-type="dijit/form/Button" data-dojo-attach-point="tocCloseLayerInfo" class="toc tocButtons dijitInline dijitToggleButtonIconChar " data-dojo-attach-event="click: _closeLayerInfoWindow" iconClass="tocCloseIcon" style="display: block !important; float: right; cursor: default;"></button>
+            </div>
+
+            <div data-dojo-attach-point="tocLayerInfoContentHolder" style="width: 100%;">
+
+                <div data-dojo-attach-point="tocLegendThumbnailsScrollable" data-dojo-type="dojox/mobile/ScrollablePane" data-dojo-props='roundCornerMask:true, radius:"5"'>
+                    <div data-dojo-attach-point="tocLegendThumbnails" class="tocLayerInfoScrollables">
+                    </div>
+                </div>
+
+                <div data-dojo-attach-point="tocLayerSource" style="margin: 5px"></div>
+
+                <div data-dojo-attach-point="tocLegendDescriptionTitle" style="margin: 5px;">
+                    <b>Description:</b>
+                </div>
+
+                <div data-dojo-attach-point="tocLayerInfoScrollHolder" style="width: 100%; clear: both;">
+                    <div data-dojo-attach-point="tocLayerInfoScrollPane" data-dojo-type="dojox/mobile/ScrollablePane" data-dojo-props='height: "inherit", roundCornerMask:true, radius:"5"'>
+                        <div data-dojo-attach-point="tocLayerDescription" class="tocLayerInfoScrollables">
+                        </div>
+                    </div>
+                </div>
+
+        </div>
+
+    </div>
+
+</div>

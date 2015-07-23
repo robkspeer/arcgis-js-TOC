@@ -1,0 +1,218 @@
+.tocButtons .dijitButtonNode {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  color: transparent !important;
+  padding: 2px 4px 4px 4px;
+  transition-property: background-color;
+  transition-duration: 0.3s;
+  margin: 0;
+  line-height: normal;
+  vertical-align: middle;
+  cursor: default;
+  display: inline-block !important;
+  font-weight: normal !important;
+}
+
+.toc .dijitToggleButtonIconChar{
+  display: block;
+}
+
+.tocToggleButton {
+    position: relative;
+    padding: 0 10px 0 16px;
+    /*margin-left: 10px;*/
+    background-color: transparent !important;
+    border: 0;
+    font-size: 75%;
+}
+
+.tocToggleButton:after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-left: 10px solid black;
+    border-bottom: 5px solid transparent;
+}
+
+.tocToggleButtonChecked:after {
+    position: absolute;
+    content: "";
+    top: 2px;
+    left: 2px;
+    width: 0px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 10px solid black;
+}
+
+.tocTabBar{
+    padding: 0px;
+}
+
+/*.tocScrollableView{
+    height: 200px !important;
+}*/
+
+.esriBasemapGallery{
+    padding-top: 5px;
+  /*-webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;*/
+}
+
+.esriBasemapGalleryNode{
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+.esriBasemapGalleryNode a img, .esriBasemapGallerySelectedNode .esriBasemapGalleryThumbnail{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.esriBasemapGalleryLabelContainer {
+    height: auto;
+}
+
+.tocTitlePane {
+    overflow: hidden;
+}
+
+.tocTitlePane .claro .dijitTitlePaneTitleFocus {
+  margin-top: 3px;
+  padding-bottom: 2px;
+}
+
+.tocTitlePane .dijitTitlePaneContentOuter {
+    background: transparent !important;
+}
+
+.tocTitlePane .dijitTitlePaneTitle {
+    /*color: white;*/
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    padding: 0px;
+}
+.tocTitlePane .dijitArrowNodeInner{
+    display: none;
+}
+.tocTitlePane .dijitFixedClosed .dijitArrowNode{
+  display: none;
+}
+.tocTitlePane .dijitTitlePaneTextNode {
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: text-top;
+}
+
+.dijitTitlePaneContentInner {
+    padding: 0px;
+    padding-left: 20px;
+}
+
+.dijitTitlePaneContentOuter {
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: -5px;
+}
+
+.divTOCLayerListCont
+{
+    height: 99%;
+    position: absolute;
+    z-index: 1001;
+    width: 99%;
+    left: 0px;
+
+}
+
+.tocInfoIcon {background-image:url('../images/layer_info.png');background-size: cover; width:16px; height:16px; display: block;}
+
+.tocCloseIcon{background-image:url('../images/close.png');background-size: cover; width:20px; height:20px; display: block;}
+
+.toc .dijitButton{
+  margin: 0.2em;
+  vertical-align: middle;
+}
+.toc .dijitOffScreen {
+  position: absolute !important;
+  left: -10000px !important;
+  top: -10000px !important;
+}
+
+/*.toc .dijitInline {
+    display: inline-block;
+}*/
+
+.toc .dijitTitlePaneContentOuter {
+  margin-left: 5px;
+  margin-right: 15px;
+  margin-top: -5px;
+}
+
+.toc .dijitTitlePaneContentOuter {
+  background: #ffffff;
+  border: 1px solid rgb(47, 55, 64);
+  border-top: none;
+-webkit-border-bottom-right-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-bottomright: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+}
+
+.toc .dijitToggleButtonIconChar {
+  display: none !important;
+}
+
+.tocLayerInfoWindow{
+
+    z-index: 10002;
+
+    height: 480px;
+    width: 320px;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border:1.5px solid;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    /*padding: 1px;*/
+
+    overflow: hidden;
+}
+
+.tocLayerInfoScrollables {
+margin:5px 9px 5px 9px;
+padding:8px;
+background-color:white;
+color:black;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+cursor: n-resize;
+}
+
+.toc .mblScrollableViewContainer, .toc label {
+cursor: n-resize;
+}
+
+.dijitCheckBoxInput{
+    opacity: 1 !important;
+}
